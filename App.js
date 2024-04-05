@@ -1,3 +1,5 @@
+// I Jay Patel, 000881881 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
+
 import React, { useState, useEffect } from "react";
 import {
   View,
@@ -59,10 +61,7 @@ export default function App() {
   };
 
   return (
-    <ImageBackground
-      source={require("./images/background.jpeg")}
-      style={[styles.container, theme === "dark" && styles.containerDark]}
-    >
+    <View style={[styles.container, theme === "dark" && styles.containerDark]}>
       {showSearch ? (
         <View style={styles.searchContainer}>
           <TextInput
@@ -134,18 +133,18 @@ export default function App() {
           ))}
         </Swiper>
       )}
-    </ImageBackground>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#5c294a",
     color: "#000",
   },
   containerDark: {
-    backgroundColor: "#121212",
+    backgroundColor: "#5c294a",
     color: "#fff",
   },
   searchContainer: {
